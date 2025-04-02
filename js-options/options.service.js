@@ -2,7 +2,7 @@
 
 let gUserOptions = {}
 
-function saveUserOptions(options) {
+function changeUserOptions(options) {
     gUserOptions = {
         email: options.email.value,
         age: options.age.value,
@@ -14,4 +14,15 @@ function saveUserOptions(options) {
 
     console.log(gUserOptions);
     
+}
+
+function saveUserOptions() {
+    const strOptions = JSON.stringify(gUserOptions)
+    localStorage.setItem('options', strOptions)
+}
+
+function loadUserOptions() {
+   const strOptions = localStorage.getItem('options')
+   const options = JSON.parse(strOptions)
+   gUserOptions = options
 }
