@@ -50,7 +50,8 @@ main h1 {
 }
 
 .nav-container a {
-    width: 100px;
+    width: 20vw;
+    font-size: 3vw;
     padding: 10px;
 
     background-color: rgb(116, 197, 163);

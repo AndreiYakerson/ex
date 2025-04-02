@@ -11,9 +11,7 @@ function changeUserOptions(options) {
         bgColor: options.bgColor.value,
         txtColor: options.txtColor.value
     }
-
     console.log(gUserOptions);
-    
 }
 
 function saveUserOptions() {
