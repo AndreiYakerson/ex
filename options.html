@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Settings</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Map</h1>
+        <nav class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="map.html">Map</a>
+            <a href="user-prefs.html">Settings</a>
+        </nav>
+    </header>
+
+    <form class="form-container" onsubmit="onClickSubmit(event)">
+
+
+        <label for="email">Email:
+            <input id="email" type="email">
+        </label>
+
+        <label for="age">Age:
+            <span id="sAge"></span>
+            <input id="age" onchange="onShowAge()" min="18" max="120" type="range">
+        </label>
+
+        <label for="date">Birth date:
+            <input id="date" type="date">
+        </label>
+
+        <label for="time">Birth time:
+            <input id="time" type="time">
+        </label>
+
+        <h1>Color:</h1>
+
+        <label for="bgColor">Set background color:
+            <input id="bgColor" type="color">
+        </label>
+
+        <label for="txtColor">Set text color:
+            <input id="txtColor" type="color">
+        </label>
+
+        <button>Set</button>
+
+    </form>
+
+    <script src="js-options/options.controller.js"></script>
+    <script src="js-options/options.service.js"></script>
+</body>
+
+</html>
