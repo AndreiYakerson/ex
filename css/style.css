@@ -32,6 +32,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 30px;
     padding: 0 20px 0 20px;
 
     background-color: rgba(36, 226, 182, 0.37);
