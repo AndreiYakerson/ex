@@ -47,9 +47,15 @@ header {
     background-color: rgba(36, 226, 182, 0.266);
 }
 
-main h1 {
+header h1 {
+    rotate: 15deg;
+    padding: 0 10px 0 10px;
     animation: scale 1s infinite alternate ;
 }
+
+/* main h1 {
+    animation: scale 1s infinite alternate ;
+} */
 
 .nav-container {
     display: flex;
@@ -59,9 +65,9 @@ main h1 {
 }
 
 .nav-container a {
-    width: 20vw;
+    width: 18vw;
     max-width: 200px;
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 10px;
 
     background-color: rgb(28, 153, 220);
