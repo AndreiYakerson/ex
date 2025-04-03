@@ -1,6 +1,8 @@
 'use strict'
 
 let gUserOptions = {}
+loadUserOptions()
+
 
 function changeUserOptions(options) {
     gUserOptions = {
@@ -13,6 +15,11 @@ function changeUserOptions(options) {
     }
     console.log(gUserOptions);
 }
+
+function getOptionsFromModel(model) {
+    return model
+}
+
 
 function saveUserOptions() {
     const strOptions = JSON.stringify(gUserOptions)

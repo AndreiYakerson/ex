@@ -1,20 +1,34 @@
 'use strict'
 
 function onInit() {
-    loadUserOptions()
+
     renderColors()
     renderInfo()
-
+    renderAge()
+    renderInputsValue(getOptionsFromModel(gUserOptions))
 }
 
 function onClickSubmit(ev) {
     ev.preventDefault()
     const elForm = ev.target
 
-    changeUserOptions(getUserOptions(elForm))
+    changeUserOptions(geOptionsFromInputs(elForm))
     saveUserOptions()
 
     window.location = 'index.html'
+}
+
+function renderInputsValue(options) {
+    const inputs = document.querySelectorAll('input')
+
+    if (inputs.length > 0) {
+        inputs[0].value = options.email
+        inputs[1].value = options.age
+        inputs[2].value = options.date
+        inputs[3].value = options.time
+        inputs[4].value = options.bgColor
+        inputs[5].value = options.txtColor
+    }
 }
 
 function renderInfo() {
@@ -34,13 +48,13 @@ function renderInfo() {
 }
 
 function renderColors() {
-
     const elBody = document.querySelector('body')
+
     elBody.style.backgroundColor = gUserOptions.bgColor
     elBody.style.color = gUserOptions.txtColor
 }
 
-function getUserOptions({ email, age, date, time, bgColor, txtColor }) {
+function geOptionsFromInputs({ email, age, date, time, bgColor, txtColor }) {
     const options = {
         email,
         age,
@@ -53,10 +67,17 @@ function getUserOptions({ email, age, date, time, bgColor, txtColor }) {
 }
 
 function onShowAge() {
-    console.log('hi');
 
     const elSpan = document.querySelector('#sAge')
     const elInput = document.querySelector('#age')
 
     elSpan.innerHTML = elInput.value
+}
+
+function renderAge() {
+    const elSpan = document.querySelector('#sAge')
+    const age = getOptionsFromModel(gUserOptions).age
+
+
+    if (elSpan !== null) elSpan.innerHTML = age
 }
