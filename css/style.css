@@ -33,11 +33,9 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 30px;
     padding: 0 20px 0 20px;
 
     background-color: rgba(36, 226, 182, 0.37);
-
 }
 
 input {
@@ -69,18 +67,20 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .nav-container a {
     width: 18vw;
     max-width: 200px;
-    font-size: 3vw;
+    min-width: 100px;
     padding: 10px;
 
     background-color: rgb(28, 153, 220);
     color: inherit;
     text-decoration: none;
+
+    font-size: 20px;
 
     -webkit-box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.75);
@@ -106,7 +106,9 @@ header h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
+
+    margin-top: 50px;
 }
 
 label {
@@ -115,11 +117,11 @@ label {
     padding: 1.5vw;
     background-color: rgba(173, 216, 230, 0.572);
     width: 50vw;
-    min-width: 250px;
+    min-width: 300px;
 
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 13px 13px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 13px 13px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 14px 13px 13px -1px rgba(0, 0, 0, 0.75);
 }
 
 form button {
@@ -134,9 +136,9 @@ form button {
 
     cursor: pointer;
 
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 13px 13px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 13px 13px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 14px 13px 13px -1px rgba(0, 0, 0, 0.75);
 }
 
 @keyframes scale {
@@ -149,5 +151,29 @@ form button {
 @keyframes spin {
     to {
         rotate: -0.10turn;
+    }
+}
+
+@media screen and (width <=450px) {
+    .nav-container {
+        gap: 10px;
+    }
+
+    .nav-container a {
+        padding: 10px 1px;
+        min-width: 70px;
+        font-size: 17px;
+    }
+
+    .form-container {
+        margin-top: 10px;
+    }
+
+    label {
+        padding: 10px;
+    }
+
+    header h1 {
+        margin-right: 5px;
     }
 }
