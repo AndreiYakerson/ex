@@ -38,10 +38,12 @@ function renderInfo() {
 
         elMain.innerHTML = `
         <h1>Welcome to the map!</h1>
+        <section class="info-container">
         <p>Email: ${gUserOptions.email}</p>
         <p>Age: ${gUserOptions.age}</p>
         <p>Birth Date: ${gUserOptions.date}</p>
         <p>Birth Time: ${gUserOptions.time}</p>
+        </section>
         `
     }
 
