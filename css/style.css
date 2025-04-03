@@ -15,6 +15,7 @@ main {
     top: 50%;
     left: 50%;
 
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,16 +104,16 @@ header h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
-
+    gap: 5px;
 }
 
 label {
     border: solid;
     border-radius: 25px;
-    padding: 15px;
+    padding: 1.5vw;
     background-color: rgba(173, 216, 230, 0.572);
-    width: 300px;
+    width: 50vw;
+    min-width: 250px;
 
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
