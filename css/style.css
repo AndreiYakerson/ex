@@ -52,7 +52,7 @@ input {
 }
 
 header h1 {
-    border: solid black;
+    border: dashed black;
     border-radius: 50%;
 
     rotate: 15deg;
