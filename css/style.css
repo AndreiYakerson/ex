@@ -48,14 +48,15 @@ header {
 }
 
 header h1 {
+    border: solid black;
+    border-radius: 50%;
+
     rotate: 15deg;
-    padding: 0 10px 0 10px;
-    animation: scale 1s infinite alternate ;
+    padding: 10px 5px 10px 5px;
+    /* animation: scale 1s infinite alternate ; */
+    animation: spin 3s infinite forwards linear alternate;
 }
 
-/* main h1 {
-    animation: scale 1s infinite alternate ;
-} */
 
 .nav-container {
     display: flex;
@@ -106,7 +107,7 @@ label {
     border: solid;
     border-radius: 25px;
     padding: 15px;
-    background-color: lightblue;
+    background-color: rgba(173, 216, 230, 0.572);
     width: 300px;
 
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -135,5 +136,11 @@ form button {
     to {
         scale: 1.1;
         color: bisque;
+    }
+}
+
+@keyframes spin {
+    to {
+        rotate: -0.10turn;
     }
 }
