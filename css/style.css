@@ -190,6 +190,8 @@ form button {
         position: static;
         margin-top: 300px;
         margin-left: 50%;
+
+        translate: -50%;
     }
 
     .form-container {
