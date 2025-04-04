@@ -185,8 +185,7 @@ form button {
     }
 }
 
-@media screen (orientation: landscape) {
-
+@media screen and (orientation: landscape) {
     main {
         position: static;
         margin-top: 300px;
