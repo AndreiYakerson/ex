@@ -185,7 +185,7 @@ form button {
     }
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
     main {
         position: static;
         margin-top: 300px;
@@ -203,4 +203,4 @@ form button {
         background-color: black;
     }
 
-}
+} */
