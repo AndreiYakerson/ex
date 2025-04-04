@@ -187,16 +187,18 @@ form button {
 
 @media (orientation: landscape) {
     main {
-        /* position: static; */
+        position: static;
         margin-top: 300px;
         margin-left: 50%;
     }
 
     .form-container {
-        /* position: static; */
+        position: static;
         margin-top: 130px;
         margin-left: 50%;
         translate: -50%;
+
+        background-color: black;
     }
 
 }
