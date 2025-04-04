@@ -15,10 +15,10 @@ main {
     top: 50%;
     left: 50%;
 
-
     display: flex;
     flex-direction: column;
     align-items: center;
+
     translate: -50% -50%;
     width: 100%;
 }
@@ -50,6 +50,12 @@ input {
     padding: 20px;
     border-radius: 25px;
     background-color: rgba(36, 226, 182, 0.266);
+
+    width: 50vw;
+    height: 50vw;
+    max-height: 500px;
+    min-width: 250px;
+    min-height: 250px;
 }
 
 header h1 {
@@ -106,18 +112,19 @@ header h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
 
-    margin-top: 50px;
+    gap: 15px;
 }
 
 label {
-    border: solid;
-    border-radius: 25px;
-    padding: 1.5vw;
-    background-color: rgba(173, 216, 230, 0.572);
     width: 50vw;
     min-width: 300px;
+
+    border: solid;
+    border-radius: 25px;
+    padding: 1.2vw;
+
+    background-color: rgba(173, 216, 230, 0.572);
 
     -webkit-box-shadow: 14px 13px 13px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 14px 13px 13px -1px rgba(0, 0, 0, 0.75);
@@ -176,4 +183,21 @@ form button {
     header h1 {
         margin-right: 5px;
     }
+}
+
+@media screen (orientation: landscape) {
+
+    main {
+        position: static;
+        margin-top: 300px;
+        margin-left: 50%;
+    }
+
+    .form-container {
+        position: static;
+        margin-top: 130px;
+        margin-left: 50%;
+        translate: -50%;
+    }
+
 }
